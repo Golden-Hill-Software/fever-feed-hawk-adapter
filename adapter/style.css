@@ -1,0 +1,117 @@
+/*
+ * style.css
+ */
+
+body {
+	font-size: 10.5pt;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #474747;
+	color: #cccccc;
+}
+
+#main {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-size: 14pt;
+}
+
+form {
+	display: none;
+}
+
+div.row {
+	margin: 10px 0px;
+}
+
+div.row label, div.row span.blank {
+	width: 10em;
+	text-align: right;
+	padding-right: 0.5em;
+	display: inline-block;
+}
+
+div.row input[type=text], div.row input[type=password] {
+	width: 20em;
+	padding: 5px;
+	font-size: 1em;
+	box-sizing : border-box;
+}
+
+a {
+	color: #cccccc;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #dedede;
+	text-decoration: underline;
+}
+
+input[type=submit] {
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 1em;
+	background-color: #474747;
+	color: #cccccc;
+	outline: none;
+	height: 44px;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+	border: 1px solid #dedede;
+	color: #dedede;
+	outline: none;
+}
+
+input[type=submit]:-moz-focus-inner
+	border: none; 
+}
+
+input[type=submit]:active {
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	outline: none;
+}
+
+input:disabled {
+	background-color: #999999;
+}
+
+#adapterUrlPara {
+	word-wrap: break-word;
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 15pt;
+	}
+
+	#main {
+		max-width: 100%;
+	}
+
+	div.row span.blank {
+		display: none;
+	}
+	
+	div.row label {
+		width: 100%;
+		text-align: left;
+		display: block;
+	}
+	
+	input {
+		display: block;
+	}
+	
+	div.row input[type=text], div.row input[type=password] {
+		width: 100%;
+		border: solid 1px;
+	}
+
+}
