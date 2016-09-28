@@ -18,13 +18,12 @@ provides free SSL certificates.
 
 ## Installation Instructions:
 
-1. Copy the "adapter" directory to a location on your Apache server that is inside an 
-Apache DocumentRoot. Set the ownership and permissions such that Apache can serve the files
-in that directory.
+1. Copy the "adapter" directory to your Apache server. Put it in a location and set its 
+permissions such that Apache will serve its contents.
 
-2. Inside the "adapter" directory, copy "config-template.php" to "config.php". Change the 
-value of the "FEVER_ROOT" configuration such that it points to the path of your fever 
-directory.
+2. Inside the "adapter" directory, rename "config-template.php" to "config.php". Edit 
+"config.php", setting the value of the "FEVER_ROOT" configuration to the path of your 
+fever directory.
 
 3. Load the "adapter/adapter.php" file with a web browser. If configured correctly, it 
 should return the following JSON: `{"adapter_api_version":1}`
