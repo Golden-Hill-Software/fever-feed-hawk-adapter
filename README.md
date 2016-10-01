@@ -28,7 +28,9 @@ fever directory.
 3. Load the "adapter/adapter.php" file with a web browser. If configured correctly, it 
 should return the following JSON: `{"adapter_api_version":1}`
 
-4. Load the "adapter/index.html" file with a web browser. Enter your Fever credentials and 
+4. Disable always_populate_raw_post_data in your php.ini file and restart Apache: `always_populate_raw_post_data = -1`
+
+5. Load the "adapter/index.html" file with a web browser. Enter your Fever credentials and 
 click or tap "Test" to verify that your installation is working correctly.
 
 After Fever-Feed Hawk adapter is installed and working correctly, [download Feed Hawk](https://itunes.apple.com/us/app/feed-hawk/id1093873777?ls=1&mt=8).

@@ -1,5 +1,7 @@
 <?php
 
+	error_reporting(0);
+
 	/*
 	 * Routines to return very simple responses.
 	 */
